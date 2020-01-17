@@ -8,12 +8,12 @@ from ssd.structures.container import Container
 
 
 class VOCDataset(torch.utils.data.Dataset):
-    class_names = ('__background__',
-                   'aeroplane', 'bicycle', 'bird', 'boat',
-                   'bottle', 'bus', 'car', 'cat', 'chair',
-                   'cow', 'diningtable', 'dog', 'horse',
-                   'motorbike', 'person', 'pottedplant',
-                   'sheep', 'sofa', 'train', 'tvmonitor')
+    class_names = ('__background__', '3477')
+#                   'aeroplane', 'bicycle', 'bird', 'boat',
+#                   'bottle', 'bus', 'car', 'cat', 'chair',
+#                   'cow', 'diningtable', 'dog', 'horse',
+#                   'motorbike', 'person', 'pottedplant',
+#                   'sheep', 'sofa', 'train', 'tvmonitor')
 
     def __init__(self, data_dir, split, transform=None, target_transform=None, keep_difficult=False):
         """Dataset for VOC data.
